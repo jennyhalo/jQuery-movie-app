@@ -1,0 +1,101 @@
+/* Annetaan sivun taustalle muotoilu */
+body {
+background-color: black;
+}
+/* Poistetaan tyylittely lista-elementeistä */
+ul {
+list-style-type: none;
+}
+/* Pääotsikon tyylittely */
+h1 {
+color: rgb(125, 27, 245);
+font-size: 50px;
+}
+/* Pääotsikon tyylittely */
+.headercolor {
+  color: rgb(255, 221, 0);
+}
+/* Luodaan li-elementeille väli */
+li {
+margin-bottom: 30px;
+}
+/* Li-elementtien tyylittely */
+#elokuvanmuotoilu {
+background-color: rgba(72, 72, 72, 0.4);
+color: blueviolet;
+}
+/* Käytetään grid asettelua, jotta kuva ja teksti saadaan vierekkäin li elementeissä */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'image main main main main main'
+    'image main main main main main';
+  gap: 10px;
+  margin-right: 30px;
+}
+/* Tyylittely kuvalle */
+.item1 { 
+grid-area: image;
+margin: 30px; 
+}
+/* Tyylittely main osiolle */
+.item2 { 
+grid-area: main; 
+margin-bottom: 20px;
+margin-top: 25px;
+margin-right: 20px;
+}
+/* Tyylittely elokuvan kansikuvalle */
+.movieImg {
+margin: 25px;
+}
+/* Tyylittely elokuvan nimelle */
+.movieNameDiv {
+font-size: 30px;
+}
+/* Tyylittely elokuvan tuotantovuodelle */
+.movieYearDiv {
+font-size: 20px;
+margin-top: 10px;
+margin-left: 20px;
+width: fit-content;
+}
+/* Tyylittely ikäsuositukselle */
+.movieAgeLimitDiv {
+margin-top: 10px;
+margin-left: 20px;
+}
+/* Tyylittely genrelle */
+.movieGenreDiv {
+font-size: 15px !important;
+margin-top: 25px;
+margin-bottom: 50px;
+margin-left: 20px;
+margin-right: 25px;
+width: fit-content;
+}
+/* Tyylittely elokuvan kuvaukselle */
+.movieDescriptionDiv {
+font-size: 20px !important;
+margin-top: 20px;
+}
+/* Tyylittely takaisin alkuun napille */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 174, 0);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+/* Tyylittely takaisin alkuun napille cursorin ollessa sen päällä */
+  #backToTopBtn:hover {
+    background-color: rgb(145, 42, 180);
+  }
